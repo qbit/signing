@@ -37,7 +37,7 @@ verify: fetch fetch-sig
 	fi ;
 	@if [ ${SIG_TYPE} == "opmsg" ]; then \
 		${PREFIX}/bin/opmsg -c \
-			/home/qbit/dev/signing/opmsg \
+			${PREFIX}/share/signing/opmsg \
 			-V ${DISTDIR}/${DISTNAME}${EXTRACT_SUFX} \
 			--in ${SIG_PATH} ; \
 	fi ;

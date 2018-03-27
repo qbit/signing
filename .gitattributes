@@ -1,0 +1,1 @@
+gnupg/pubring.kbx filter=lfs diff=lfs merge=lfs -text

@@ -10,7 +10,9 @@ You will need [git lfs](https://git-lfs.github.com/) installed to be able to com
 Currently you will need to add the following to your mk.conf file:
 
 ```
+.if exists(/usr/local/share/signing/signing.mk)
 .include "/usr/local/share/signing/signing.mk"
+.endif
 ```
 
 SIG_SUFX should be set per port. Currently only validating detatched
